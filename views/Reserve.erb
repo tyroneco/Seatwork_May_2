@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Pandora: Reserve Now!</title>
+    <link rel="stylesheet" type="text/css" href="Style.css"/>
+  </head>
+  <body>
+    <h1> Reserve Now!</h1>
+	<form method="POST" action="/Reserved_Room">
+		<label for="Type of Room"> Type of Room: </label>
+		<select name="type">
+			<option value="Single">Single</option>
+			<option value="Double">Double</option>
+			<option value="Deluxe">Deluxe</option>
+			<option value="Family">Family</option>
+		</select>
+		<br />
+		<label for="Date"> Check in date: </label>
+		<input id="Date" type="date" name="check_In_Date"/>
+		<br />
+		<label for="Date"> Check out date: </label>
+		<input id="Date" type="date" name="check_Out_Date"/>
+		<button onclick="Submit">Submit</button>
+	</form>
+	<p><a href="/Home"> Home </a></p>
+  </body>
+</html>
